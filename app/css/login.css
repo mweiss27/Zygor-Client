@@ -1,0 +1,67 @@
+#login-wrapper {
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: -1;
+}
+
+#login-container {
+	display: inline-block;
+	margin: 50px auto;
+}
+
+#login-logo {
+	width: 300px;
+}
+
+#login-exit {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 32px;
+	cursor: pointer;
+}
+
+#login-exit:hover {
+	background: #323232;
+}
+
+#login-forgot {
+	margin-top: 5px;
+	margin-left: 5px;
+	float: left;
+}
+
+#login-login {
+	margin-top: 7px;
+	margin-right: 5px;
+	float: right;
+	background: #ff4000;
+	font-style: outline;
+	color: white;
+	/*text-shadow: -1px 0 #000,0 1px #000,1px 0 #000,0 -1px #000;*/
+}
+
+#login-login:hover {
+	background: black;
+	color: #ff4000;
+}
+
+#login-wrap2 {
+	margin-top: 10px;
+}
+
+#login-wrapper input {
+	background: #242424;
+	color: #969696;
+	border: 1px solid #646464;
+	width: 300px;
+	height: 25px;
+	padding-left: 3px;
+}
+
+#login-wrapper input:focus {
+	outline: none;
+	border: 1px solid #969696;
+}

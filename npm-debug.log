@@ -1,0 +1,131 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.1.32
+3 info using node@v0.8.0
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose config file C:\Users\mweiss\.npmrc
+6 verbose config file C:\Program Files\nodejs\etc\npmrc
+7 verbose config file C:\Program Files\nodejs\node_modules\npm\npmrc
+8 verbose read json C:\Users\mweiss\Documents\git\zygorelectron\package.json
+9 verbose readDependencies using package.json deps
+10 verbose install where, deps [ 'C:\\Users\\mweiss\\Documents\\git\\zygorelectron',
+10 verbose install   [ 'electron-prebuilt',
+10 verbose install     'electron',
+10 verbose install     'fs-jetpack',
+10 verbose install     'gulp',
+10 verbose install     'gulp-sass' ] ]
+11 verbose from cache C:\Users\mweiss\Documents\git\zygorelectron\package.json
+12 info preinstall electron-boilerplate@0.0.0
+13 verbose from cache C:\Users\mweiss\Documents\git\zygorelectron\package.json
+14 verbose readDependencies using package.json deps
+15 verbose cache add [ 'electron-prebuilt@^1.3.5', null ]
+16 silly cache add name=undefined spec="electron-prebuilt@^1.3.5" args=["electron-prebuilt@^1.3.5",null]
+17 verbose parsed url { pathname: 'electron-prebuilt@^1.3.5',
+17 verbose parsed url   path: 'electron-prebuilt@^1.3.5',
+17 verbose parsed url   href: 'electron-prebuilt@^1.3.5' }
+18 silly cache add name="electron-prebuilt" spec="^1.3.5" args=["electron-prebuilt","^1.3.5"]
+19 verbose parsed url { pathname: '^1.3.5', path: '^1.3.5', href: '^1.3.5' }
+20 verbose addNamed [ 'electron-prebuilt', '^1.3.5' ]
+21 verbose addNamed [ null, null ]
+22 info addNameTag [ 'electron-prebuilt', '^1.3.5' ]
+23 verbose cache add [ 'electron@^1.3.5', null ]
+24 silly cache add name=undefined spec="electron@^1.3.5" args=["electron@^1.3.5",null]
+25 verbose parsed url { pathname: 'electron@^1.3.5',
+25 verbose parsed url   path: 'electron@^1.3.5',
+25 verbose parsed url   href: 'electron@^1.3.5' }
+26 silly cache add name="electron" spec="^1.3.5" args=["electron","^1.3.5"]
+27 verbose parsed url { pathname: '^1.3.5', path: '^1.3.5', href: '^1.3.5' }
+28 verbose addNamed [ 'electron', '^1.3.5' ]
+29 verbose addNamed [ null, null ]
+30 info addNameTag [ 'electron', '^1.3.5' ]
+31 verbose cache add [ 'fs-jetpack@^0.9.2', null ]
+32 silly cache add name=undefined spec="fs-jetpack@^0.9.2" args=["fs-jetpack@^0.9.2",null]
+33 verbose parsed url { pathname: 'fs-jetpack@^0.9.2',
+33 verbose parsed url   path: 'fs-jetpack@^0.9.2',
+33 verbose parsed url   href: 'fs-jetpack@^0.9.2' }
+34 silly cache add name="fs-jetpack" spec="^0.9.2" args=["fs-jetpack","^0.9.2"]
+35 verbose parsed url { pathname: '^0.9.2', path: '^0.9.2', href: '^0.9.2' }
+36 verbose addNamed [ 'fs-jetpack', '^0.9.2' ]
+37 verbose addNamed [ null, null ]
+38 info addNameTag [ 'fs-jetpack', '^0.9.2' ]
+39 verbose cache add [ 'gulp@^3.9.1', null ]
+40 silly cache add name=undefined spec="gulp@^3.9.1" args=["gulp@^3.9.1",null]
+41 verbose parsed url { pathname: 'gulp@^3.9.1',
+41 verbose parsed url   path: 'gulp@^3.9.1',
+41 verbose parsed url   href: 'gulp@^3.9.1' }
+42 silly cache add name="gulp" spec="^3.9.1" args=["gulp","^3.9.1"]
+43 verbose parsed url { pathname: '^3.9.1', path: '^3.9.1', href: '^3.9.1' }
+44 verbose addNamed [ 'gulp', '^3.9.1' ]
+45 verbose addNamed [ null, null ]
+46 info addNameTag [ 'gulp', '^3.9.1' ]
+47 verbose cache add [ 'gulp-sass@^2.3.2', null ]
+48 silly cache add name=undefined spec="gulp-sass@^2.3.2" args=["gulp-sass@^2.3.2",null]
+49 verbose parsed url { pathname: 'gulp-sass@^2.3.2',
+49 verbose parsed url   path: 'gulp-sass@^2.3.2',
+49 verbose parsed url   href: 'gulp-sass@^2.3.2' }
+50 silly cache add name="gulp-sass" spec="^2.3.2" args=["gulp-sass","^2.3.2"]
+51 verbose parsed url { pathname: '^2.3.2', path: '^2.3.2', href: '^2.3.2' }
+52 verbose addNamed [ 'gulp-sass', '^2.3.2' ]
+53 verbose addNamed [ null, null ]
+54 info addNameTag [ 'gulp-sass', '^2.3.2' ]
+55 verbose url raw fs-jetpack
+56 verbose url resolving [ 'https://registry.npmjs.org/', './fs-jetpack' ]
+57 verbose url resolved https://registry.npmjs.org/fs-jetpack
+58 verbose etag "598cae92-11e4d"
+59 http GET https://registry.npmjs.org/fs-jetpack
+60 verbose url raw electron
+61 verbose url resolving [ 'https://registry.npmjs.org/', './electron' ]
+62 verbose url resolved https://registry.npmjs.org/electron
+63 verbose etag "5a17406c-20194"
+64 http GET https://registry.npmjs.org/electron
+65 verbose url raw electron-prebuilt
+66 verbose url resolving [ 'https://registry.npmjs.org/', './electron-prebuilt' ]
+67 verbose url resolved https://registry.npmjs.org/electron-prebuilt
+68 verbose etag "59f6832b-353b6"
+69 http GET https://registry.npmjs.org/electron-prebuilt
+70 verbose url raw gulp-sass
+71 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-sass' ]
+72 verbose url resolved https://registry.npmjs.org/gulp-sass
+73 verbose etag "5a1ca7b6-eaf7"
+74 http GET https://registry.npmjs.org/gulp-sass
+75 verbose url raw gulp
+76 verbose url resolving [ 'https://registry.npmjs.org/', './gulp' ]
+77 verbose url resolved https://registry.npmjs.org/gulp
+78 verbose etag "5a1add2c-1d8d9"
+79 http GET https://registry.npmjs.org/gulp
+80 silly registry.get cb [ 304, undefined ]
+81 verbose etag fs-jetpack from cache
+82 silly registry.get cb [ 304, undefined ]
+83 verbose etag gulp-sass from cache
+84 silly registry.get cb [ 304, undefined ]
+85 verbose etag electron-prebuilt from cache
+86 silly registry.get cb [ 304, undefined ]
+87 verbose etag electron from cache
+88 silly registry.get cb [ 304, undefined ]
+89 verbose etag gulp from cache
+90 error Error: No compatible version found: fs-jetpack@'^0.9.2'
+90 error Valid install targets:
+90 error ["0.1.0","0.2.0","0.3.0","0.4.0","0.4.1","0.5.0","0.5.1","0.5.2","0.5.3","0.6.0","0.6.1","0.6.2","0.6.3","0.6.4","0.6.5","0.7.0","0.7.1","0.7.2","0.7.3","0.8.0","0.9.0","0.9.1","0.9.2","0.10.0","0.10.1","0.10.2","0.10.3","0.10.4","0.10.5","0.11.0","0.12.0"]
+90 error     at installTargetsError (C:\Program Files\nodejs\node_modules\npm\lib\cache.js:506:10)
+90 error     at C:\Program Files\nodejs\node_modules\npm\lib\cache.js:386:15
+90 error     at saved (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\get.js:136:7)
+90 error     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:230:7
+90 error     at Object.oncomplete (fs.js:297:15)
+90 error  [Error: No compatible version found: fs-jetpack@'^0.9.2'
+90 error Valid install targets:
+90 error ["0.1.0","0.2.0","0.3.0","0.4.0","0.4.1","0.5.0","0.5.1","0.5.2","0.5.3","0.6.0","0.6.1","0.6.2","0.6.3","0.6.4","0.6.5","0.7.0","0.7.1","0.7.2","0.7.3","0.8.0","0.9.0","0.9.1","0.9.2","0.10.0","0.10.1","0.10.2","0.10.3","0.10.4","0.10.5","0.11.0","0.12.0"]]
+91 error You may report this log at:
+91 error     <http://github.com/isaacs/npm/issues>
+91 error or email it to:
+91 error     <npm-@googlegroups.com>
+92 error System Windows_NT 6.2.9200
+93 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+94 error cwd C:\Users\mweiss\Documents\git\zygorelectron
+95 error node -v v0.8.0
+96 error npm -v 1.1.32
+97 error message No compatible version found: fs-jetpack@'^0.9.2'
+97 error message Valid install targets:
+97 error message ["0.1.0","0.2.0","0.3.0","0.4.0","0.4.1","0.5.0","0.5.1","0.5.2","0.5.3","0.6.0","0.6.1","0.6.2","0.6.3","0.6.4","0.6.5","0.7.0","0.7.1","0.7.2","0.7.3","0.8.0","0.9.0","0.9.1","0.9.2","0.10.0","0.10.1","0.10.2","0.10.3","0.10.4","0.10.5","0.11.0","0.12.0"]
+98 verbose exit [ 1, true ]

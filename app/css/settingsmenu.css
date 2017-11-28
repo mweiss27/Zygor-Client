@@ -1,0 +1,27 @@
+#settings-menu {
+    display: none;
+    padding: 20px 0px;
+}
+
+.settingsTab {
+    display: flex;
+    align-items: center;
+    padding: 4px 10px;
+}
+
+.settingsTab[data-selected="true"] {
+    background: #484848;
+}
+
+.settingsTab:hover {
+    background: #484848;
+}
+
+.settingsTab img {
+    width: 27px;
+}
+
+.settingsTab label {
+    color: white;
+    margin-left: 10px;
+}

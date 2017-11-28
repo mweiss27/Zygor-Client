@@ -1,0 +1,25 @@
+#bottombar-version {
+    margin: auto 5px;
+}
+
+#bottombar-version label {
+    font-size: 0.9em;
+}
+
+#bottombar-version-ver {
+    font-weight: bold;
+}
+
+#bottombar-bottomright {
+    float: right;
+    margin-right: 5px;
+}
+
+#bottombar-bottomright img {
+    cursor: pointer;
+    width: 24px;
+}
+
+#bottombar-icon-back {
+    display: none;
+}

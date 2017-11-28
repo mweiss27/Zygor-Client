@@ -1,0 +1,32 @@
+/*.selectize-input {
+  background-image: none !important;
+  background: #161616 !important;
+  color: #CCC !important;
+}
+
+.selectize-input:after {
+  border-color: #CCC transparent transparent transparent !important;
+}
+
+.selectize-dropdown {
+  background: #161616 !important;
+}
+
+.selectize-dropdown.single {
+  border-color: #CCC !important;
+}
+
+.selectize-dropdown .option {
+  background-color: transparent !important;
+  color: #CCC !important;
+}
+
+.selectize-dropdown .option.active {
+  background-color: #484848 !important;
+}*/
+
+.selectize-input {
+  width: 350px !important;
+  background-image: none !important;
+  background: #161616 !important;
+}  
