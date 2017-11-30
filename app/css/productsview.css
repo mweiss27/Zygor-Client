@@ -44,9 +44,14 @@
 	width: 100%;
 }
 
+#productsview-products-container thead tr {
+    line-height: 25pt;
+}
+
 #productsview-products-container th {
 	color: white;
-	font-size: 0.85em;
+    font-size: 10pt;
+    font-weight: bold;
 	text-align: left;
 }
 
@@ -81,7 +86,7 @@
 .statusButton {
     display: flex;
     align-items: center;
-	background: #ff6000;
+	background: #ff4000;
 	width: 100px;
 	height: 25px;
 	border-radius: 1px;

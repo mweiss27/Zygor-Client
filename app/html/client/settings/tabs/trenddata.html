@@ -1,0 +1,51 @@
+<div id="settingsContentTrendData" class="settings-tab-content">
+
+    <h2 class="settings-tab-header">Trend Data</h2>
+
+    <div id="settings-trenddata-row1">
+        <label id="trenddata-label-region" class="settings-trenddata-descriptor">Region: </label>
+        <div id="settings-trenddata-region">
+            <select>
+                <option value="us">US</option>
+            </select>
+        </div>
+        <label id="trenddata-label-realm" class="settings-trenddata-descriptor">Realm: </label>
+        <select id="settings-trenddata-realm">
+            <option value="aegwyn">Aegwynn</option>
+        </select>
+
+        <img src="./images/plus_green.png" draggable="false" title="Add Realm" />
+        <img src="./images/minus_red.png" draggable="false" title="Remove Realm" />
+        <div id="spacer" />
+        <button id="trenddata-detectRealms">Detect Realms</button>
+    </div>
+
+    <div class="container-fluid" id="settings-trenddata-realms">
+        <div id="settings-trenddata-realms-header" class="row">
+            <div class="col-sm-4 col-xs-4 col-md-4 left">
+                <label class="trenddata-header">REALM</label>
+            </div>
+            <div class="col-sm-4 col-xs-4 col-md-4 left">
+                <label class="trenddata-header">CURRENT</label>
+            </div>
+            <div class="col-sm-4 col-xs-4 col-md-4 left">
+                <label class="trenddata-header">LATEST</label>
+            </div>
+        </div>
+        <!-- Dynamically add realms -->
+    </div>
+
+    <div id="settings-trenddata-row3">
+        <div class="styled-input--square">
+            <div class="styled-input-single">
+                <input type="checkbox" id="optionAutomaticallyImportRealms" />
+                <label for="optionAutomaticallyImportRealms">Automatically import the realms I play on</label>
+            </div>
+        </div>
+        <div id="spacer" />
+        <button class="btn-orange" id="trenddata-sync">Sync</button>
+    </div>
+
+</div>
+
+<script src="./js/client/settings/trenddata.js"></script>

@@ -37,15 +37,7 @@
 	margin-top: 7px;
 	margin-right: 5px;
 	float: right;
-	background: #ff4000;
-	font-style: outline;
-	color: white;
 	/*text-shadow: -1px 0 #000,0 1px #000,1px 0 #000,0 -1px #000;*/
-}
-
-#login-login:hover {
-	background: black;
-	color: #ff4000;
 }
 
 #login-wrap2 {

@@ -87,10 +87,73 @@
 	vertical-align: middle;
 }
 
+#settings-trenddata-row1 {
+	display: flex;
+	align-items: center;
+}
 
+#settings-trenddata-row1 img {
+	width: 15px;
+	height: 15px;
+	margin-left: 8px;
+	cursor: pointer;
+}
 
+#settings-trenddata-region .selectize-control {
+	width: 65px !important;
+}
 
+#settings-trenddata-region .selectize-input {
+	width: inherit !important;
+}
 
+.settings-trenddata-descriptor {
+	color: white;
+	font-weight: bold;
+	margin-right: 3px;
+}
 
+#trenddata-label-realm {
+	margin-left: 10px;
+}
 
+#settings-trenddata-realms {
+	border: 1px solid #999;
+	height: 15em;
+}
 
+#settings-trenddata-realms label.trenddata-header {
+	font-weight: bold;
+	color: white;
+}
+
+#settings-trenddata-realms div.left {
+	text-align: left
+}
+
+#settings-trenddata-realms div.center {
+	text-align: center;
+}
+
+#settings-trenddata-realms div.right {
+	text-align: right;
+}
+
+#settings-trenddata-row3 {
+	margin-top: 5px;
+	display: flex;
+}
+
+#spacer {
+	display: inline;
+	flex-grow: 100000;
+}
+
+#trenddata-detectRealms {
+	width: 125px;
+	height: 24px;
+}
+
+#updates-wow-trenddata {
+	margin-left: 20px;
+}

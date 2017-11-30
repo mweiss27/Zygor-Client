@@ -49,6 +49,10 @@
   opacity: 1;
 }
 
+.styled-input--square {
+  display: inline-block;
+}
+
 .styled-input--square label:before, .styled-input--square label:after {
   border-radius: 0;
 }

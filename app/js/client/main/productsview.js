@@ -18,8 +18,8 @@ $(function() {
 			var ele = $(e.currentTarget);
 			var background =  util.rgbToHex(ele.css("background-color"));
 
-			if (background === "#ff6000")
-				ele.css("background-color", "#ffa000");
+			if (background === "#ff4000")
+				ele.css("background-color", "#ff8000");
 			else if (background === "#484848")
 				ele.css("background-color", "#646464");
 
@@ -28,8 +28,8 @@ $(function() {
 			var ele = $(e.currentTarget);
 			var background =  util.rgbToHex(ele.css("background-color"));
 
-			if (background === "#ffa000")
-				ele.css("background-color", "#ff6000");
+			if (background === "#ff8000")
+				ele.css("background-color", "#ff4000");
 			else if (background === "#646464")
 				ele.css("background-color", "#484848");
 		}

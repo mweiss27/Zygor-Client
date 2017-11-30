@@ -179,10 +179,11 @@ function main() {
 	win = new BrowserWindow({
 		//width: 850,
 		height: 525,
-		width: 1200,
+		width: 1100,
 		show: true,
 		frame: false
 	});
+
 	win.setResizable(false);
 
 	win.loadURL(url.format({

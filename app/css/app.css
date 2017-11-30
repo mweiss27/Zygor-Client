@@ -1,5 +1,7 @@
 html {
 	height: 100%;
+    border: 1px solid gray;
+    padding: 2px;
 }
 
 body {
@@ -13,12 +15,6 @@ body {
 	-webkit-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-	margin: 0;
-	border: 1px solid gray;
 }
 
 #container {
@@ -83,6 +79,7 @@ button:active {
 }
 
 button:hover {
+    background: #646464;
 	border: 1px solid #CCC;
 }
 
@@ -138,4 +135,17 @@ hr {
 .checkbox > label {
 	display: inline;
 	width: auto;
+}
+
+.btn-orange {
+    background: #ff4000;
+    color: white;
+    font-style: outline;
+}
+
+.btn-orange:hover {
+    background: #ff8000;
+    /*background: black;
+    color: #ff4000;
+    border-color: #ff4000;*/
 }

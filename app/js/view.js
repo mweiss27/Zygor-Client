@@ -24,9 +24,26 @@ function load(file, container, onSuccess) {
     });
 }
 
+function showModal(id) {
+    $("body, #container, #" + id + ", #zmodal-background").toggleClass("active");
+}
+
+function hideModal() {
+    $("body, #container, .zmodal, #zmodal-background").toggleClass("active");
+}
+
 $(function() {
 
 	loadView("./html/login/loginview.html");
+
+    load("./html/modals/changelog.html", "", (contents) => {
+        $(contents).insertAfter("#zmodal-background");
+        showModal("zmodal-changelog");
+    });
+
+    $(document).on("click", "#zmodal-background, .zmodal-close", () => {
+        hideModal();
+    });
 
 	console.log("zgcore.js loaded");
 });
