@@ -51,17 +51,3 @@
 #login-wrap2 {
 	margin-top: 10px;
 }
-
-#login-wrapper input {
-	background: #242424;
-	color: #969696;
-	border: 1px solid #646464;
-	width: 300px;
-	height: 25px;
-	padding-left: 3px;
-}
-
-#login-wrapper input:focus {
-	outline: none;
-	border: 1px solid #969696;
-}

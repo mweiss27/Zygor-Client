@@ -1,6 +1,44 @@
+var tabFileMap = {
+    "settingsTabGeneral": "general.html",
+    "settingsTabAccount": "account.html",
+    "settingsTabInstallations": "installations.html",
+    "settingsTabTrendData": "trenddata.html",
+    "settingsTabUpdates": "updates.html",
+    "settingsTabNotifications": "notifications.html",
+
+};
+
+var headerContentMap = { 
+    "settingsTabGeneral": "settingsContentGeneral",
+    "settingsTabAccount": "settingsContentAccount",
+    "settingsTabInstallations": "settingsContentInstallations",
+    "settingsTabTrendData": "settingsContentTrendData",
+    "settingsTabUpdates": "settingsContentUpdates",
+    "settingsTabNotifications": "settingsContentNotifications",
+};
+
 $(function() {
 
-    function onTabChange(selected) {
+    for (var tabId in tabFileMap) {
+        var html = tabFileMap[tabId];
+        load("./html/client/settings/tabs/" + html, "#settings-content", () => {
+            $("select").selectize({
+                create: true
+            });
+        });
+    }
+
+    function selectTab(tabId) {
+        console.log("selectTab: " + tabId);
+        $(".settings-tab-content").css("display", "none");
+
+        var contentId = headerContentMap[tabId];
+        console.log("contentId: " + contentId);
+        if (typeof(contentId) !== "undefined") {
+            $("#" + contentId).css("display", "block");
+        }
+        else
+            console.log("undefined")
     }
 
     $(".settingsTab").on("click", function() {
@@ -13,13 +51,13 @@ $(function() {
         $(this).attr("data-selected", "true");
         
         if (wasntSelected) {
-            onTabChange($(this).find("label").html());
+            selectTab($(this).attr("id"));
         }
 
     });
 
     var first = $(".settingsTab").first();
     first.attr("data-selected", "true");
-    onTabChange(first.find("label").html());
+    selectTab(first.attr("id"));
 
 });

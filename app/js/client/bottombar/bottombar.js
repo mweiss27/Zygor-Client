@@ -27,7 +27,7 @@ $(function() {
         toggle();
     });
 
-    //$("#bottombar-icon-settings").click();
+    $("#bottombar-icon-settings").click();
 
     console.log("bottombar.js loaded");
 });

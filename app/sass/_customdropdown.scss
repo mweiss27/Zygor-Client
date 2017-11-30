@@ -6,7 +6,7 @@ $selectize-color-input: #CCC;
 $selectize-color-dropdown: #161616;
 $selectize-color-dropdown-item-active: #484848;
 $selectize-color-dropdown-item-active-text: #CCC;
-
-body {
-    background: black !important;
-}
+$selectize-padding-y: 0px;
+$selectize-padding-x: 0px;
+$selectize-line-height: 24px;
+$selectize-arrow-size: 7px;

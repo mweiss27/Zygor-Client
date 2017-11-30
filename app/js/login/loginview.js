@@ -34,6 +34,6 @@ $(function() {
 		require("electron").remote.getCurrentWindow().close();
 	});
 
-	// $("#login-login").click();
+	$("#login-login").click();
 
 });

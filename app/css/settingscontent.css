@@ -3,17 +3,58 @@
     margin: 10px;
 }
 
+.settings-tab-content {
+	display: none;
+}
+
+#settingsContentGeneral {
+	display: block;
+}
+
 .settings-tab-header {
     display: block;
-    font-size: 1.25em;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .settings-tab-section {
+	margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.settings-tab-section label:first-child {
+.settings-tab-section > label:first-child {
     display: block;
     margin-bottom: 10px;
 }
+
+.settings-installations-header > img {
+	width: 18px;
+	height: 18px;
+}
+
+.settings-installations-directory-template {
+	display: flex;
+	width: 100%;
+}
+
+.settings-installations-directory-index {
+	line-height: 100%;
+	vertical-align: middle;
+}
+
+.settings-installations-directory-path { 
+	height: 24px;
+	font-size: 10pt;
+	flex-grow: 999;
+}
+
+.settings-installations-actions {
+	
+}
+
+
+
+
+
+
+
+

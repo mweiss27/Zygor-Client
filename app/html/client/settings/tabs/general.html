@@ -1,25 +1,60 @@
-<div class="settings-tab-content">
+<div id="settingsContentGeneral" class="settings-tab-content">
 
-    <label class="settings-tab-header">General</label>
+    <h2 class="settings-tab-header">General</h2>
 
     <div class="settings-tab-section">
         <label>Client language</label>
-
-        
-  <div class="select">
-    <select name="slct" id="slct">
-      <option>Choose an option</option>
-      <option value="1">Pure CSS</option>
-      <option value="2">No JS</option>
-      <option value="3">Nice!</option>
-    </select>
-  </div>
-
+        <select>
+            <option value="English">English</option>
+            <option value="Spanish">Español</option>
+            <option value="German">Deutsche</option>
+        </select>
     </div>
-    <div class="pretty p-default">
-        <input type="checkbox" id="startOnStartup" />
-        <div class="state p-warning">
-            <label>Run client on system startup</label>
+
+
+    <div class="settings-tab-section">
+        <div class="styled-input--square">
+            <div class="styled-input-single">
+                <input type="checkbox" id="optionStartOnStartup" />
+                <label for="optionStartOnStartup">Start client on system startup</label>
+            </div>
         </div>
     </div>
+
+    <div class="settings-tab-section">
+        <h4>When I click the X:</h4>
+        <div class="styled-input-single">
+            <input type="radio" name="optionCloseClient" id="optionCloseClientMinimize" />
+            <label for="optionCloseClientMinimize">Minimize the client</label>
+        </div>
+        <div class="styled-input-single">
+            <input type="radio" name="optionCloseClient" id="optionCloseClientTray" />
+            <label for="optionCloseClientTray">Send the client to the system tray</label>
+        </div>
+        <div class="styled-input-single">
+            <input type="radio" name="optionCloseClient" id="optionCloseClientExit" />
+            <label for="optionCloseClientExit">Exit the client</label>
+        </div>
+    </div>
+
+    <div class="settings-tab-section">
+        <h4>When I launch a game:</h4>
+        <div class="styled-input-single">
+            <input type="radio" name="optionLaunchGame" id="optionLaunchGameNothing" />
+            <label for="optionLaunchGameNothing">Do nothing</label>
+        </div>
+        <div class="styled-input-single">
+            <input type="radio" name="optionLaunchGame" id="optionLaunchGameMinimize" />
+            <label for="optionLaunchGameMinimize">Minimize the client</label>
+        </div>
+        <div class="styled-input-single">
+            <input type="radio" name="optionLaunchGame" id="optionLaunchGameTray" />
+            <label for="optionLaunchGameTray">Send the client to the system tray</label>
+        </div>
+        <div class="styled-input-single">
+            <input type="radio" name="optionLaunchGame" id="optionLaunchGameExit" />
+            <label for="optionLaunchGameExit">Exit the client</label>
+        </div>
+    </div>
+
 </div>

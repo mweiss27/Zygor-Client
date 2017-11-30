@@ -9,12 +9,17 @@ function loadView(path) {
 	$("#container").load(path);
 }
 
-function load(file, container) {
+function load(file, container, onSuccess) {
     $.ajax({
         url: file,
         dataType: "text",
         success: function(contents) {
-            $(container).append(contents);
+            if (container) {
+                $(container).append(contents);
+            }
+            
+            if (onSuccess)
+                onSuccess(contents);
         }
     });
 }
@@ -24,6 +29,4 @@ $(function() {
 	loadView("./html/login/loginview.html");
 
 	console.log("zgcore.js loaded");
-
-    $(".dropdown-toggle").dropdown();
 });

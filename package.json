@@ -28,6 +28,7 @@
   "homepage": "https://github.com/hawkins/electron-boilerplate#readme",
   "devDependencies": {
     "electron": "*",
+    "electron-context-menu": "^0.9.1",
     "fs-jetpack": "*",
     "gulp": "*",
     "gulp-import-css": "^0.1.3",

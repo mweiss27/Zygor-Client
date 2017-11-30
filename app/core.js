@@ -7,6 +7,14 @@ const mkdirp = require("mkdirp");
 const fmd5 = require("md5-file")
 const util = require("util");
 
+require('electron-context-menu')({
+	prepend: (params, browserWindow) => [{
+		label: 'Rainbow',
+		// Only show it when right-clicking images
+		visible: params.mediaType === 'image'
+	}]
+});
+
 /*
 let server_domain = "file://C:/Users/Matt/git/zcelectron/www"
 let manifest_url = util.format("%s/client/manifest.txt", server_domain);
