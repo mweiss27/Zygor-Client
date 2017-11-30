@@ -29,11 +29,20 @@
 .settings-installations-header > img {
 	width: 18px;
 	height: 18px;
+	margin-right: 3px;
+}
+
+.settings-installations {
+	margin-bottom: 5px;
 }
 
 .settings-installations-directory-template {
 	display: flex;
 	width: 100%;
+}
+
+.settings-installations-header {
+	margin-bottom: 5px;
 }
 
 .settings-installations-directory-index {
@@ -45,10 +54,37 @@
 	height: 24px;
 	font-size: 10pt;
 	flex-grow: 999;
+	margin-left: 5px;
 }
 
 .settings-installations-actions {
-	
+	margin-left: 7px;
+}
+
+.settings-installations-actions img {
+	width: 15px;
+	height: 15px;
+	margin-left: 3px;
+	cursor: pointer;
+}
+
+.settings-addInstallation {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.settings-addInstallation > * {
+	cursor: pointer;
+}
+
+.settings-addInstallation img {
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+}
+
+.settings-addInstallation label {
+	vertical-align: middle;
 }
 
 

@@ -12,5 +12,6 @@ $(function() {
 	}
 
 	addInstallationDirectory("wow", "C:/Program Files (x86)/World of Warcraft");
+	addInstallationDirectory("eso", "C:/Program Files (x86)/The Elder Scrolls Online")
 
 });

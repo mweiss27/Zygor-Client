@@ -29,16 +29,13 @@ $(function() {
     }
 
     function selectTab(tabId) {
-        console.log("selectTab: " + tabId);
         $(".settings-tab-content").css("display", "none");
 
         var contentId = headerContentMap[tabId];
-        console.log("contentId: " + contentId);
+
         if (typeof(contentId) !== "undefined") {
             $("#" + contentId).css("display", "block");
         }
-        else
-            console.log("undefined")
     }
 
     $(".settingsTab").on("click", function() {

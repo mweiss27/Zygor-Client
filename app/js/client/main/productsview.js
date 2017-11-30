@@ -27,7 +27,6 @@ $(function() {
 		(e) => {
 			var ele = $(e.currentTarget);
 			var background =  util.rgbToHex(ele.css("background-color"));
-			console.log(background);
 
 			if (background === "#ffa000")
 				ele.css("background-color", "#ff6000");
