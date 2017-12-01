@@ -1,7 +1,8 @@
 {
-  "name": "zygor-guides-client",
+  "name": "Zygor",
   "version": "0.0.1",
-  "description": "Zygor Guides Client",
+  "description": "Zygor App",
+  "homepage": "http://zygorguides.com",
   "main": "core.js",
   "scripts": {
     "start": "electron ."

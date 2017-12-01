@@ -28,4 +28,8 @@ $(function() {
 
     console.log("topbar.js loaded");
 
+    $("#main-topbar-logo").on("click", function() {
+        require("electron").remote.getCurrentWindow().reload();
+    });
+
 });
