@@ -20,6 +20,7 @@ gulp.task('copy', ['clean'], function () {
                   , 'core.js'
                   , 'view.html'
                   , 'package.json'
+                  , 'node_modules/**'
                   ]
     });
 });

@@ -1,7 +1,7 @@
-@import "node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";
+@import "app/node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";
 
 @import "_customdropdown";
-@import "node_modules/selectize-scss/src/selectize.default.scss";
+@import "app/node_modules/selectize-scss/src/selectize.default.scss";
 
 $FontPathOpenSans: "../../node_modules/npm-font-open-sans/fonts";
-@import "node_modules/npm-font-open-sans/open-sans.scss";
+@import "app/node_modules/npm-font-open-sans/open-sans.scss";
