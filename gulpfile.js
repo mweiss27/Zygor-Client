@@ -16,6 +16,7 @@ var distDir = jetpack.cwd("dist");
 var nodeDirApp = jetpack.cwd("app/node_modules");
 var nodeDirBuild = jetpack.cwd("build/node_modules");
 
+var os = require("os");
 
 var exec = require("child_process").exec;
 
@@ -71,15 +72,17 @@ gulp.task("dist", function(cb) {
     var dirs = getDirectories("dist");
     dirs.forEach(dir => {
 
-      exec("electron-installer-windows --src \"" + dir + "\" --dest dist/installers/", function(err, stdout, stderr) {
-        if (err) {
-          cb(err);
-          return;
-        }
+      if (os.platform() == "win32") {
+        exec("electron-installer-windows --src \"" + dir + "\" --dest dist/installers/", function(err, stdout, stderr) {
+          if (err) {
+            cb(err);
+            return;
+          }
 
-        console.log("Successfully packaged " + dir);
+          console.log("Successfully packaged Win32App: " + dir);
 
-      });
+        });
+      }
     });
 
 
