@@ -50,7 +50,7 @@
 }
 
 .styled-input--square {
-  display: inline-block;
+  display: block;
 }
 
 .styled-input--square label:before, .styled-input--square label:after {

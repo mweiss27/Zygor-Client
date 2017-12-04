@@ -25,6 +25,7 @@ function load(file, container, onSuccess) {
 }
 
 function showModal(id) {
+    console.log("showModal(" + id + ")");
     $("body, #container, #" + id + ", #zmodal-background").toggleClass("active");
 }
 
@@ -38,7 +39,7 @@ $(function() {
 
     load("./html/modals/changelog.html", "", (contents) => {
         $(contents).insertAfter("#zmodal-background");
-        showModal("zmodal-changelog");
+        //showModal("zmodal-changelog");
     });
 
     $(document).on("click", "#zmodal-background, .zmodal-close", () => {

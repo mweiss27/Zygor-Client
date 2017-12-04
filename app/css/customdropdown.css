@@ -11,3 +11,7 @@
 .selectize-input:hover {
   border-color: white !important;
 }
+
+.selectize-input input {
+    color: transparent !important;
+}

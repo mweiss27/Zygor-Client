@@ -29,6 +29,8 @@ $(function() {
     }
 
     function selectTab(tabId) {
+        $(".settingsTab img").attr("src", "./images/circle.png");
+        $("#" + tabId + " img").attr("src", "./images/circle_filled.png");
         $(".settings-tab-content").css("display", "none");
 
         var contentId = headerContentMap[tabId];

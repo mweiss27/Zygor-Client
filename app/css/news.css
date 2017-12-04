@@ -1,0 +1,53 @@
+#news-container {
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.news-entry {
+	padding: 10px 0px 15px 0px;
+	margin: 0 10px;
+	border-bottom: 2px solid #323232;
+}
+
+.news-entry:last-child {
+	border: none !important;
+}
+
+.news-entry-date > label {
+	margin-bottom: 5px;
+}
+
+.news-entry-img > img {
+	width: 100%;
+	height: 100%;
+}
+
+.news-entry-content > label {
+	display: inline-block;
+}
+
+.news-entry-content > .news-entry-body {
+	line-height: 1.4em;
+}
+
+/*
+<div class="container-fluid news-entry">
+    <div class="row">
+        <div class="news-entry-date col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <label>Tuesday, May 30th</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="news-entry-img col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <img draggable="true" />
+        </div>
+
+        <div class="news-entry-content col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <label class="news-entry-title" />
+            <label class="news-entry-body" />
+        </div>
+
+    </div>
+</div>
+*/

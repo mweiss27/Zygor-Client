@@ -1,11 +1,25 @@
+#client-topbar {
+    min-height: 40px;
+    max-height: 40px;
+    -webkit-app-region: drag;
+    justify-content: space-between;
+}
+
+.topbar-header, #main-topbar-controls > * {
+    -webkit-app-region: no-drag;
+}
+
+#main-topbar-topleft {
+    display: inline-flex;
+}
+
 #main-topbar-logo {
     margin-left: 5px;
     margin-top: 3px;
-    width: 100px;
+    max-width: 100px;
 }
 
 #main-topbar-headers {
-    margin-top: 20px;
 }
 
 .topbar-header {

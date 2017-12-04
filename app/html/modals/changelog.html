@@ -1,11 +1,43 @@
 <div class="zmodal" id="zmodal-changelog">
-    <div class="zmodal-header">
-        <h2 class="changelog-title-game">World of Warcraft</h2><h2>&nbspChangelog</h2>
-        <img class="zmodal-close" src="./images/exit.png" draggable="false" />
-    </div>
+	<div id="changelog-container">
+	    <div class="zmodal-header">
+	        <h2 id="changelog-title" />
+	        <img class="zmodal-close" src="./images/exit.png" draggable="false" />
+	    </div>
 
-    <div class="zmodal-content">
-        
-    </div>
-
+	    <textarea id="zchangelog-content" readonly="true">
+	        
+	    </textarea>
+	</div>
 </div>
+
+<script>
+	$(function() {
+		$("#changelog-title").html("World of Warcraft Changelog");
+		$("#zchangelog-content").val(`LEVELING
+[B] Added Argus Campaign - Added the new Antorus quests "The Burning Throne" and "The Death of a Titan."
+[B] Updated Argus Campaign - Added a router to bypass steps for "The Netherlight Crucible" quest for players who have completed it on another character.
+
+DAILIES
+[B] Added World Quests - Cathedral of Eternal Night: Infernal Dead.
+
+DUNGEONS
+[B] Added Antorus, the Burning Throne.
+
+PETS/MOUNTS
+Updated Hunter Pets - Added valid conditions to display an improper guide message when a non-Hunter loads a guide.
+[B] Added Hunter Pets - Added the following guides in beta access: Purple Plated Chimaera (Rare Spawn), Drakeadon (Rare Spawn), Damaged Blue Silithid Colossi (Rare Spawn), Damaged Orange Silithid Colossi (Rare Spawn), Damaged Pink Silithid Colossi (Rare Spawn), Orange Silithid Colossi (Rare Spawn), Spectral Gryphon, Lightning Spirit Fox (Rare Spawn), Ghostly White Worm (Rare Spawn), Turquoise-Spotted Plum Scarab (Rare Spawn), Green Beetle (Rare Spawn), Orange Beetle, White Beetle (Rare Spawn), Ghostly Diseased Boar (Rare Spawn), Brown and Tan Mystic Cat (Rare Spawn), Obsidian Mystic Cat (Rare Spawn), Orange-Striped Green Mystic Cat (Rare Spawn), Spotted White Mystic Cat, Striped White Mystic Cat, White-Striped Black Mystic Cat (Rare Spawn), Black Cat, Brown and Tan Cat, Ghostly White Cat, Golden-Tan Cat, Icy Blue Cat (Rare Spawn), Ghostly Gray Demon Dog, White Demon Dog (Rare Spawn), Orange Azeroth Hydra, Black Monkey with Fez (Rare Spawn), Green and Indigo Ravager, Orange and Black Ravager, Orange and Magenta Ravager (Rare Spawn), Fiery Fire Scorpion, Brown Rugged Scorpion, Green Rugged Scorpion (Rare Spawn), Red Fire Spider, Ghostly Black Saber Worg (Rare Spawn), Ghostly Brown Saber Worg (Rare Spawn), Dark Brown Worg (Rare Spawn), Ghostly Tan Bat (Rare Spawn), Green Owl, Sapphire Owl (Rare Spawn), Ghostly Blue Two-Headed Vulture, Ghostly White Two-Headed Vulture (Rare Spawn), Ghostly Yellow Two-Headed Vulture (Rare Spawn), Ghostly Blue Vulture (Rare Spawn), Black Dragonhawk (Rare Spawn), Gray Dragonhawk (Rare Spawn), Orange Dragonhawk, Green and Blue Moth (Rare Spawn), White and Yellow Moth (Rare Spawn), Blue Arcane Wyrm, Purple Arcane Wyrm, Red Arcane Wyrm, White Arcane Wyrm, Blue Boss Wasp, Blue and Red Boss Wasp, Green and Red Boss Wasp, Orange Boss Wasp, Green Firefly, Blue Spiked Wind Serpent, Blue and White Spiked Wind Serpent (Rare Spawn), Gray and Red Spiked Wind Serpent (Rare Spawn), Gray and Yellow Spiked Wind Serpent (Rare Spawn), Gray Spiked Wind Serpent, Green Spiked Wind Serpent, Red and Gray Spiked Wind Serpent (Rare Spawn), Red Spiked Wind Serpent (Rare Spawn), White and Gray Spiked Wind Serpent (Rare Spawn), White Spiked Wind Serpent, Yellow Spiked Wind Serpent (Rare Spawn), Dark Orange Wind Serpent, Light Orange Wind Serpent, Blue Spiked Crab, Blue-Marked Black Spiked Crab, Purple-Marked Black Spiked Crab, Purple-Marked Blue Spiked Crab, Red-Black Spiked Crab (Rare Spawn), Green Greater Crocolisk, Blue Stone Quilen, Brown Quilen, Gray Quilen, Red Quilen, Ghostly Blue Spirit Porcupine, Ghostly Green Spirit Porcupine, Ghostly Red Spirit Porcupine, Blue Plated Water Strider, Dark Yellow Water Strider, Purple Silkworm (Rare Spawn), Grand Lion (Rare Spawn), Black-Nosed Orange Grand Tiger, Brown Porcupine, Gray Porcupine, Orange Armored Raptor, Black Rugged Scorpion, Red Rugged Scorpion, Blue-Magenta and Yellow Moth, Blue-Marked Dark Blue Spiked Crab, Purple-Marked Dark Purple Spiked Crab, Purple-Marked Green Spiked Crab, Purple-Marked Red Spiked Crab, Black Dragon Turtle, Blue Glowing Dragon Turtle, Red Dragon Turtle, Red Jormungar, Red and Purple Crested Basilisk, Fel Green Greater Boar, Red Greater Boar, Black Warp Stalker, Iron Horde Wolf, Brown Armored Maned Wolf, Fel Green Maned Wolf, Tan-Brown Greater Bat, Blue-Tinged Dark Red Spiked Crab, Coral Water Strider, Bright Green Jormungar, Diseased White Bear, Black and Red Falcosaur, Orange and Turquoise Falcosaur, Purple and Green Falcosaur, Silver and Gray Falcosaur, Gray Doe, Battle-Scarred Runed Worg, Green Greater Bat, Arcane Purple Grand Hippogryph, Blue and Gold Grand Hippogryph, Green and Red Grand Hippogryph, Black Gryphon, Brown Gryphon, White Gryphon, Blue Hippogryph, Brown and White Hippogryph, Dark Hippogryph, Fel Green Hippogryph, Pale Hippogryph (Rare Spawn), Purple Hippogryph, Black Owlcat, Brown Owlcat, Gray-Brown Owlcat, Silver-Gray Owlcat, Blue Wind Rider (Rare Spawn), Brown Wind Rider, Green Wind Rider, Blue Wolfhawk, Brown Wolfhawk, Green Wolfhawk, Yellow Glowing Purple Firefly, Gray and Green Spiked Wind Serpent, Red-Tinged Steel Blue Spiked Crab, Camo Spiked Dragon Turtle, Red Spiked Dragon Turtle.
+
+ACHIEVEMENTS
+[B] Added Achievements - Aquatic Acquiescence, Best of the Beasts, Mousing Around, Dragons!, Ragnaros, Watch and Learn, Flock Together, Murlocs, Harpies, and Wolvar, Oh My!, Master of Magic, Roboteer, and The Lil'Necromancer.
+[A] Added In Pursuit of Gul'dan
+[B] Added Tranquil Master - Added Alliance and Horde achievement guides
+[B] Added Glory of the Firelands Raider - Added achievement guide
+[B] Added Glory of the Dragon Soul Raider - Added achievement guide
+[A] Added Tranquil Master
+[B] Updated The Scavenger - Updated achievement criteria to reflect Blizzard changes. Updated coordinates and added tips to each step.
+[B] Added Glory of the Icecrown Raider (10 Player) - Added achievement guide
+[B] Added Glory of the Icecrown Raider (25 Player) - Added achievement guide
+[B] Added Glory of the Cataclysm Raider - Added achievement guide`);
+	});
+</script>

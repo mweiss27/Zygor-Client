@@ -176,15 +176,19 @@ function reloadApplication(success, initial) {
 */
 function main() {
     
-    win = new BrowserWindow({
-        //width: 850,
-        height: 525,
-        width: 1100,
-        show: true,
-        frame: false
-    });
+    var WIDTH = 850;
+    var HEIGHT = 525;
 
-    win.setResizable(false);
+    win = new BrowserWindow({
+        height: HEIGHT,
+        width: WIDTH,
+
+        minWidth: WIDTH,
+        minHeight: HEIGHT,
+
+        show: true,
+        frame: false,
+    });
 
     win.on("closed", () => {
         // Dereference the window object, usually you would store windows
