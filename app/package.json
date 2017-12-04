@@ -1,18 +1,21 @@
 {
   "name": "Zygor",
-  "version": "0.0.1",
-  "description": "Zygor App",
+  "version": "0.0.2",
+  "description": "Application to manage your Zygor Guides products.",
   "homepage": "http://zygorguides.com",
   "main": "core.js",
   "scripts": {
     "start": "electron ."
   },
   "author": "Zygor Guides, LLC",
+  "devDependencies": {
+    "electron": "*"
+  },
   "dependencies": {
-    "electron": "*",
-    "electron-context-menu": "*",
     "base-64": "*",
     "bootstrap-sass": "*",
+    "electron-context-menu": "*",
+    "electron-squirrel-startup": "^1.0.0",
     "jquery": "*",
     "md5-file": "*",
     "node-sass": "*",
