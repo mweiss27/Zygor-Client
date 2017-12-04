@@ -27,6 +27,7 @@ gulp.task("build", ["copy", "scss", "css"], function () {
 });
 
 gulp.task("copy_node", function() {
+    nodeDirBuild.remove();
     return nodeDirApp.copy(".", nodeDirBuild.path(), {});
 });
 
@@ -61,7 +62,7 @@ gulp.task("scss", function () {
 
 gulp.task("dist", function(cb) {
   distDir.remove();
-  exec("electron-packager build --out=dist --icon=./app.ico --asar=true --prune=true", function(err, stdout, stderr) {
+  exec("electron-packager build --out=dist --icon=./app.ico --asar=true --prune=true --overwrite", function(err, stdout, stderr) {
     if (err) {
       cb(err);
       return;

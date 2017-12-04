@@ -1,5 +1,5 @@
 const {app, BrowserWindow} = require("electron");
-
+const dialog = require("dialog");
 const url = require("url");
 const path = require("path");
 const download = require("./js/lib/download");
@@ -14,9 +14,14 @@ if (handleSquirrelEvent()) {
 
 function handleSquirrelEvent() {
     if (process.argv.length === 1) {
+        dialog.info("#args is 1, returning false");
         return false;
     }
-
+    dialog.info("#args !== 1:");
+    for (var i = 0; i < process.argv.length; i++) {
+        var arg = process.argv[i];
+        dialog.info(`arg[${i}]: ${arg}`);
+    }
     const ChildProcess = require('child_process');
 
     const appFolder = path.resolve(process.execPath, '..');
@@ -69,8 +74,9 @@ function handleSquirrelEvent() {
         // --squirrel-updated
 
         app.quit();
-    return true;
+        return true;
     }
+    console.log("Unrecognized squirrel event. Returning null");
 };
 
 require("electron-context-menu")({

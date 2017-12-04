@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "Application to manage your Zygor Guides products.",
   "homepage": "http://zygorguides.com",
+  "repository": "git@github.com:mweiss27/Zygor-Client.git",
   "main": "core.js",
   "scripts": {
     "start": "electron ."
@@ -22,6 +23,7 @@
     "npm-font-open-sans": "*",
     "selectize": "*",
     "selectize-scss": "*",
-    "urlencode": "*"
+    "urlencode": "*",
+    "dialog": "*"
   }
 }
